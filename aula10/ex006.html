@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#bloco{
+            font: normal 1.7em arial;
+            background-color: rgba(4, 71, 4, 0.863);
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+     <!--Há a possibilidade de adicionar os eventos no HTML ao colocar o nome dos eventos dentro da tag assim: onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()". OBS: sempre colocando "on" na frente para ligar o evento-->
+    <div id="bloco">
+        Interaja...
+    </div>
+
+    <script>
+        var b = window.document.getElementById('bloco')
+        b.addEventListener('click', clicar)
+        b.addEventListener('mouseenter', entrar)
+        b.addEventListener('mouseout', sair)
+
+
+        function clicar() {
+            b.innerText = 'Clicou!'
+            b.style.background = 'red'
+        } 
+        function entrar() {
+            b.innerText = 'Entrou!'
+        }
+        function sair() {
+            b.innerText = 'Saiu!'
+            b.style.background = 'rgba(4, 71, 4, 0.863)'
+        }
+    </script>
+</body>
+</html>
