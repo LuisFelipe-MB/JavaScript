@@ -29,7 +29,7 @@ function Verificar() {
                 //Idoso
                 img.setAttribute('src', 'idoso.png')
             }
-        } else if(sexinf[1].checked){
+        } else if (sexinf[1].checked) {
             genero = 'Mulher'
             if (idade >=0 && idade < 4) {
                 //Bebê
@@ -51,6 +51,7 @@ function Verificar() {
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
         res.appendChild(img)
+        
     }
 
 }
