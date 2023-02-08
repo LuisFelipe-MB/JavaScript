@@ -1,12 +1,12 @@
-/*console.log("VAI COMEÇAR...")
-for (var c=1; c<=4; c++) {
+console.log("VAI COMEÇAR...")
+for (var c=10; c>=4; c--) {
     console.log(c)
 }
 console.log("FIM!")
-*/
+
 
 //Fibonacc------
-var a1 = 1
+/*var a1 = 1
 var a2 = 1
 var a3 = 0
 console.log(a1)
@@ -16,7 +16,7 @@ for (var c = 3; c<=13; c++) {
     console.log(a3)
     a1 = a2
     a2 = a3
-}
+}*/
 
 
 /*
