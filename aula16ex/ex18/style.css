@@ -19,7 +19,7 @@ section {
     color: black;
     box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.479);
 }
-select#tab {
+select#ftab {
     width: 150px;
 }
 footer {
